@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    =<link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+.container1241{
+  width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+div.elem-group {
+  margin: 20px 0;
+}
+
+div.elem-group.inlined {
+  width: 49%;
+  display: inline-block;
+  float: left;
+  margin-left: 1%;
+}
+
+label {
+  display: block;
+  font-family: 'Nanum Gothic';
+  padding-bottom: 10px;
+  font-size: 1.25em;
+}
+
+input, select, textarea { 
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  width: 100%;
+  padding: 10px;
+}
+
+div.elem-group.inlined input {
+  width: 95%;
+  display: inline-block;
+}
+
+textarea {
+  height: 250px;
+}
+
+hr {
+  border: 1px dotted #ccc;
+}
+
+button {
+  height: 50px;
+  background: orange;
+  border: none;
+  color: white;
+  font-size: 1.25em;
+  font-family: 'Nanum Gothic';
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 2px solid black;
+}
+    </style>
+</head>
+<body><header class="header" data-header id="io">
+    <div class="container">
+      <a href="#">
+        <h1 class="logo">Explore of India</h1>
+      </a>
+      <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="about.html" class="navbar-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="tours.html" class="navbar-link">Tours</a>
+          </li>
+          <li>
+            <a href="blog.html" class="navbar-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="navbar-link" link="">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <a href="booking.html" class="btn btn-secondary">Booking Now</a>
+        
+
+      </nav>
+
+    </div>
+  </header>
+    <div class="container1241">
+        <form action="resistation.php" method="POST">
+            <div class="elem-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="visitor_name" placeholder="Priyansu Jena" pattern=[A-Z\sa-z]{3,20} required>
+            </div>
+            <div class="elem-group">
+              <label for="email">Your E-mail</label>
+              <input type="email" id="email" name="visitor_email" placeholder="priyansujena1@email.com" required>
+            </div>
+            <div class="elem-group">
+              <label for="phone">Your Phone</label>
+              <input type="tel" id="phone" name="visitor_phone" placeholder="6370016498" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+            </div>
+            <hr>
+            <div class="elem-group inlined">
+              <label for="adult">Adults</label>
+              <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+            </div>
+            <div class="elem-group inlined">
+              <label for="child">Children</label>
+              <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+            </div>
+            <div class="elem-group inlined">
+              <label for="checkin-date">jorney start date</label>
+              <input type="date" id="checkin-date" name="checkin" required>
+            </div>
+            <div class="elem-group inlined">
+              <label for="checkout-date">jorney end date</label>
+              <input type="date" id="checkout-date" name="checkout" required>
+            </div>
+            <div class="elem-group">
+              <label for="room-selection">Select place Preference</label>
+                  <select name="" id="">
+                    <option value="">Choose a place from the List</option>
+                    <option value="Himachal">Himachal</option>
+                    <option value="Kashmir">Kashmir</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Uttar_Pradesh">Uttar Pradesh</option>
+                    <option value="Kolkata">Kolkata</option>
+                  </select>
+              </select>
+            </div>
+            <hr>
+            <div class="elem-group">
+              <label for="message">Plz write Something</label>
+              <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+            </div>
+            <button type="submit" name="sumbit_now">BookNow</button>
+          </form>
+    </div>
+      <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+        <div class="container">
+    
+          <div class="footer-top">
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Top destination</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Indonesia, Jakarta</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Maldives, Malé</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Australia, Canberra</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Thailand, Bangkok</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Morocco, Rabat</a>
+              </li>
+    
+            </ul>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Categories</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Travel</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Lifestyle</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Fashion</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Education</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Food & Drink</a>
+              </li>
+    
+            </ul>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Quick links</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">About</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Contact</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Tours</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Booking</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Terms & Conditions</a>
+              </li>
+    
+            </ul>
+    
+            <div class="footer-list">
+    
+              <p class="footer-list-title">Get a newsletter</p>
+    
+              <p class="newsletter-text">
+                For the latest deals and tips, travel no further than your inbox
+              </p>
+    
+              <form action="" class="newsletter-form">
+                <input type="email" name="email" required placeholder="Email address" class="newsletter-input">
+    
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+    
+            </div>
+    
+          </div>
+    
+          <div class="footer-bottom">
+    
+            <a href="#" class="logo">Tourest</a>
+    
+            <p class="copyright">
+              &copy; 2023 <a href="#" class="copyright-link">priyansujena</a>. All Rights Reserved
+            </p>
+    
+            <ul class="social-list">
+    
+              <li>
+                <a href="" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-google"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <script>
+        var currentDateTime = new Date();
+var year = currentDateTime.getFullYear();
+var month = (currentDateTime.getMonth() + 1);
+var date = (currentDateTime.getDate() + 1);
+
+if(date < 10) {
+  date = '0' + date;
+}
+if(month < 10) {
+  month = '0' + month;
+}
+
+var dateTomorrow = year + "-" + month + "-" + date;
+var checkinElem = document.querySelector("#checkin-date");
+var checkoutElem = document.querySelector("#checkout-date");
+
+checkinElem.setAttribute("min", dateTomorrow);
+
+checkinElem.onchange = function () {
+    checkoutElem.setAttribute("min", this.value);
+}
+      </script>
+    
+
+</body>
+</html>
